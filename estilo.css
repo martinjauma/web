@@ -26,6 +26,7 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
+
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
@@ -718,4 +719,5 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+    
 }
