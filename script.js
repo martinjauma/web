@@ -46,6 +46,6 @@ const botonDescarga = document.querySelector(".sobremi button");
 // Agrega un evento de clic al botón
 botonDescarga.addEventListener("click", () => {
     // Iniciar la descarga del archivo
-    window.open("cv/CV Martin Jauma Cast Coach.pdf", "_blank");
+    window.open("cv/CV MAJ COACH EN.pdf", "_blank");
 });
 
