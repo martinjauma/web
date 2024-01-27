@@ -45,7 +45,7 @@ const botonDescarga = document.querySelector(".sobremi button");
 // Agrega un evento de clic al botón
 botonDescarga.addEventListener("click", () => {
   // Iniciar la descarga del archivo
-  window.open("cv/CV MAJ COACH EN.pdf", "_blank");
+  window.open("cv/CV MAJ COACH ES.pdf", "_blank");
 
 });
 
