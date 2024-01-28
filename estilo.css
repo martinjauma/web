@@ -125,15 +125,18 @@ html{
 }
 .sobremi .contenido-seccion p{
     font: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 32px;
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
     color: #1CB698;
     font-weight: bold;
+    font-size: 20px;
 }
 .sobremi .fila{
     display: flex;
+
 }
 .sobremi .fila .col
 {
