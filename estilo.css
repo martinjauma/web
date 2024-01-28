@@ -149,7 +149,7 @@ html{
 }
 .sobremi .fila .col ul{
     list-style: none;
-    color: #faf7f7;
+    text-decoration: none;
 }
 .sobremi .fila .col ul li{
     margin: 12px 0;
