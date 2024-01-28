@@ -149,8 +149,7 @@ html{
 }
 .sobremi .fila .col ul{
     list-style: none;
-    text-decoration: none; 
-    text-decoration-line:none   
+    color: #faf7f7;
 }
 .sobremi .fila .col ul li{
     margin: 12px 0;
@@ -158,7 +157,7 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #1CB698;
+    color: #f8fbfa;
     width: 130px;
 
 }
