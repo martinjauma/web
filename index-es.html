@@ -411,19 +411,24 @@
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Telefono">
-                    <input type="text" placeholder="email">
-                    <input type="text" placeholder="Sujeto">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+
+            <form action="https://formspree.io/f/mleqnzbd" method="POST">
+            
+                <h2>CONTACT</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="text" placeholder="Nombre" name="name">
+                        <input type="text" placeholder="Telefono" name="phone">
+                        <input type="email" placeholder="Email" name="email">
+                        <input type="text" placeholder="Sujeto" name="subject">
+                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+            </form>
+
                 </div>
                 <!-- Mapa -->
                 <div class="col">
