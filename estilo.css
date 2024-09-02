@@ -432,6 +432,8 @@ html{
 }
 .curriculum .fila .item p{
     line-height: 24px;
+    text-align: justify;
+
 }
 .curriculum .fila .izq{
     border-right: 2px solid #1CB698;
