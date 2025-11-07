@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Martín</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ACERCA DE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+
+                    <div class="idiom">
+                        <li><a href="index.html" onclick="seleccionar()" style="color: #1CB698;
+                            ;"> ENGLISH</a></li>
+                    </div>
+
+
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/MAJperfilCoach.jpeg" alt="">
+            </div>
+            <h1>MARTIN JAUMA</h1>
+            <h2>Entrenador de Rugby - Data Science </h2>
+            <div class="redes">
+                <a href="https://www.youtube.com/channel/UCPIN_ZDBIJEIasRM1oAgcUw" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/martinjauma" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/martin-jauma-361552192/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/martinjaumaxv/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>ACERCA DE MI</h2>
+            <p><span>Hola, me llamo Martín Jauma.</span> Como entrenador de rugby, mi estilo de coaching es el del tipo
+                facilitador y es el que me dio el mejor resultado.
+                Mis habilidades incluyen, organizado, metódico planificador, resolutivo, open minded, apasionado por el
+                juego,
+                trabajo y constructor de equipo, uso la tecnología como herramienta en el desarrollo para un rugby
+                competitivo..</p>
+
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Información Personal</h3>
+                    <ul>
+                        <!-- <li>
+                            <strong>Cumpleaños</strong>
+                            17-12-1970
+                        </li> -->
+                        <br>
+                        <li>
+                            <strong>Whatsapp</strong>
+                            +54 9 11 3620-5030
+                        </li>
+                        <br>
+
+                        <li>
+                            <strong>Email</strong>
+                            martin.jauma@gmail.com
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Portafolio Web</strong>
+                            https://martinjauma.github.io/web/
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Dirección</strong>
+                            Buenos Aires, Argentina
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- intereses
+                <div class="col">
+                    <h3>Interes</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-chart-line"></i>
+                            <span>TRADE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-mitten"></i>
+                            <span>FUEGOS</span>
+                        </div>
+                        
+                    </div>
+                </div> -->
+                <div class="col">
+                    <p><img src="img/MAJ_NZ.jpg" width="100%" alt="">Tour New Zealand 2018</p>
+                </div>
+            </div>
+            <a>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Looker Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Fulcrum Technologies</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Profesional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Rugby</h3>
+                    <div class="item izq">
+                        <h4>Asesor Tecnico - Head Coach</h4>
+                        <span class="casa">Jockey Club de Venado Tuerto SF 🇦🇷</span>
+                        <span class="fecha">2025 - Actualidad</span>
+                        <p>Head Coach 1ra Torneo Regional del Litoral</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Asesor Tecnico</h4>
+                        <span class="casa">Paysandú Golf Club Trébol 🇺🇾</span>
+                        <span class="fecha">2024</span>
+                        <p>Como Asistente de Coach en las áreas de Scrum, Lineout, Reinicio y Defensa, me dedico a capacitar a jugadores y entrenadores del club en el proceso de desarrollo para las categorías mayores y juveniles (M15 a M19). Mi labor incluye diagnosticar, planificar y analizar partidos y entrenamientos semanales, con el objetivo de establecer metas de desarrollo medibles a corto, mediano y largo plazo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Asesor Tecnico</h4>
+                        <span class="casa">Rugby Club Los Matreros</span>
+                        <span class="fecha">2022</span>
+                        <p>Mi tarea es capacitar a los entrenadores del club en el proceso de desarrollo para las categorías juveniles M15 a M19, diagnosticando, planificando y analizando los partidos y entrenamientos de todas las semanas. Para desarrollar objetivos de desarrollos medibles a corto, mediano y largo plazo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Asesor Tecnico - Head Coach
+                        </h4>
+                        <span class="casa">Club San Carlos</span>
+                        <span class="fecha">2016 - 2019 & 2023</span>
+                        <p>En este rol tenia el desafío de crear junto a los entrenadores y jugadores del propio club
+                            una forma de jugar que de valor de
+                            pertenencia para el club, capacitándolos en un método de trabajo, planificando, organizando
+                            para el desarrollo de todas las
+                            estructuras para la práctica de un rugby competitivo. El año 2016 se obtuvo un doble ascenso
+                            llegando a la 2da categoría del rugby
+                            de Buenos Aires, al proximo año se hizo la mejor campaña de la historia del club
+                            clasificando en el puesto18 de todos los equipos
+                            federados de U.R.B.A</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Asesor Tecnico</h4>
+                        <span class="casa">Club Pucara</span>
+                        <span class="fecha">2017 - 2019</span>
+                        <p>El propósito en este trabajo era capacitar a los entrenadores del club a entender un ¿qué?,
+                            ¿Para qué? y ¿cómo? entrenar. Pucará
+                            es uno de los clubes más importantes del país. Club formador mucha cantidad de jugadores
+                            para los distintos seleccionados
+                            Argentinos.
+                            En el año 2019 también estuve asesorando técnicamente y dando el soporte de analista de
+                            video para los 3 primeros equipos senior
+                            del club.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>DATA SCIENCE
+                    </h3>
+                    <div class="item der">
+                        <h4>Analista de Video & Datos
+                        </h4>
+                        <span class="casa">Seleccion Rugby Uruguay 🇺🇾</span>
+                        <span class="fecha">2024</span>
+                        <p>Como Analista del seleccionado de rugby, integro mis habilidades en análisis de video,
+                            ciencia de datos y desarrollo web
+                            para optimizar el rendimiento del equipo. Realizo un análisis detallado de partidos y
+                            entrenamientos, extrayendo datos
+                            clave que utilizo para crear visualizaciones y reportes personalizados. Desarrollo
+                            herramientas web a medida para
+                            facilitar el acceso a estadísticas y mejorar la toma de decisiones. Mi enfoque combina
+                            tecnología avanzada y
+                            conocimiento del deporte para apoyar al equipo en la preparación estratégica y táctica.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Project Manager
+                        </h4>
+                        <span class="casa">Super Rugby Americas</span>
+                        <span class="fecha">2019 - Actualidad</span>
+                        <p>Proyecto para la competencia de Franquicias Americanas SLAR y Super Rugby Americas. En estos
+                            proyectos como jefe del minsmo
+                            mi principal tarea fue y es la toma de requerimientos de distintos actores del rugby de alta
+                            performance: entrenadores, preparadores
+                            físicos, médicos, referís y otros especialistas; diseñar una solución a medida de
+                            visualización de datos; definir y crear la estructura y
+                            el formato de datos utilizados. Damos los servicios de HIA, TMO, CITING, para el campeonato
+                            de Franquicias SUPER RUGBY
+                            AMERICAS.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Video Analista</h4>
+                        <span class="casa">Sudamerica XV</span>
+                        <span class="fecha">Tour 2023</span>
+                        <p>Sudamérica XV es un equipo de rugby integrado por jugadores sudamericanos gestionado por
+                            Sudamérica Rugby. Originalmente se conformó para disputar partidos amistosos frente a la
+                            selección de Sudáfrica y clubes de ese país. Tiempo después ha vuelto a conformarse para
+                            enfrentar a distintos equipos sudamericanos.</p>
+                        <br>
+
+                        <a href="https://www.sudamerica.rugby/espanol/los-origenes-de-sudamerica-xv-3?nid=949"
+                            target="_blank" style="color: #1CB698;">
+                            <p>El comienzo de Sudamérica XV</p>
+                        </a>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>The South American XV (sometimes known as CONSUR XV and formerly as South American Jaguars)[1] is a rugby union team made up from the national rugby sides in the Sudamérica Rugby (formerly CONSUR) rugby federation.
+
+                            The squad was first formed in 1980 to compete against South African teams, despite the ban imposed on that country in repudiation of apartheid. Over the eight test matches played, seven of them were won by the Springboks and only one was won by the Jaguars. This single victory came at Bloemfontein in 1982.
+                            
+                            In 2011, a new South America XV was formed to face the Argentine side before they trip to New Zealand to play the 2011 Rugby World Cup./p>
+                        <div class="conectord">
+                            <div class="circulod"></div> -->
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Super_Rugby_Americas.png" alt="">
+                    <div class="overlay">
+                        <h3>Data Science</h3>
+                        <p>Super Rugby Americas</p>
+                        <a href="https://srugby-americas.rugby-stats.com/" target="_blank" class="btn btn-primary">Open
+                            Dashboard</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/puntoEncuentro.png" alt="">
+                    <div class="overlay">
+                        <h3>Rugby Coach</h3>
+                        <p>key</p>
+                        <a href="https://www.youtube.com/watch?v=4E2riwGDUVk" target="_blank"
+                            class="btn btn-primary">Coaching</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/LookerStudio.png" alt="">
+                    <div class="overlay">
+                        <h3>Learning</h3>
+                        <p>Software</p>
+                        <a href="https://www.youtube.com/watch?v=x5pHETeEYeI" target="_blank"
+                            class="btn btn-primary">Sport BI</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Statslive.png" alt="">
+                    <div class="overlay">
+                        <h3>Stats</h3>
+                        <p>Real Code</p>
+                        <a href="https://tvstats.rugby-stats.com/" target="_blank"
+                            class="btn btn-primary">Html/CSS/JavasScrip</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Lineout.png" alt="">
+                    <div class="overlay">
+                        <h3>Stats</h3>
+                        <p>Axis</p>
+                        <a href="https://www.youtube.com/watch?v=EFM7rkmlsas" target="_blank"
+                            class="btn btn-primary">Html/CSS/JavasScrip</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/app.png" alt="">
+                    <div class="overlay">
+                        <h3>Software</h3>
+                        <p>Sport</p>
+                        <a href="https://lookerstudio.google.com/reporting/06ca3867-465b-43d7-8374-3b568023ee86"
+                            target="_blank" class="btn btn-primary">Business Intelligence</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+
+            <form action="https://formspree.io/f/mleqnzbd" method="POST">
+
+                <h2>CONTACT</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="text" placeholder="Nombre" name="name">
+                        <input type="text" placeholder="Telefono" name="phone">
+                        <input type="email" placeholder="Email" name="email">
+                        <input type="text" placeholder="Sujeto" name="subject">
+                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+            </form>
+
+        </div>
+        <!-- Mapa -->
+        <div class="col">
+            <img src="img/MAJperfilBI.jpg" alt="">
+            <div class="info">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ranelagh, Buenos Aires Arg.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen"></i>
+
+                        Whatsapp: +54 9 11 3620-5030
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: martin.jauma@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.youtube.com/channel/UCPIN_ZDBIJEIasRM1oAgcUw" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/martinjauma" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/martin-jauma-361552192/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/martinjaumaxv/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script-es.js"></script>
+</body>
+
+</html>
