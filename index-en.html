@@ -9,6 +9,7 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="estilo.css">
 </head>
 
@@ -423,75 +424,91 @@
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
             <h2>Portfolio</h2>
-            <div class="carousel-buttons">
-                <button class="prev-btn">&lt;</button>
-                <button class="next-btn">&gt;</button>
-            </div>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/appSRA.png" alt="">
-                    <div class="overlay">
-                        <h3>Data Science</h3>
-                        <p>Super Rugby Americas</p>
-                        <a href="https://www.youtube.com/watch?v=W5q8pDYRMXw" target="_blank"
-                            class="btn btn-primary">Open
-                            Dashboard</a>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="proyecto">
+                            <img src="img/appSRA.png" alt="">
+                            <div class="overlay">
+                                <h3>Data Science</h3>
+                                <p>Super Rugby Americas</p>
+                                <a href="https://www.youtube.com/watch?v=W5q8pDYRMXw" target="_blank"
+                                    class="btn btn-primary">Open
+                                    Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="proyecto">
+                            <img src="img/Super_Rugby_Americas.png" alt="">
+                            <div class="overlay">
+                                <h3>Data Science</h3>
+                                <p>Super Rugby Americas</p>
+                                <a href="https://srugby-americas.rugby-stats.com/" target="_blank"
+                                    class="btn btn-primary">Open
+                                    Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="proyecto">
+                            <img src="img/puntoEncuentro.png" alt="">
+                            <div class="overlay">
+                                <h3>Rugby Coach</h3>
+                                <p>key</p>
+                                <a href="https://www.youtube.com/watch?v=4E2riwGDUVk" target="_blank"
+                                    class="btn btn-primary">Coaching</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="proyecto">
+                            <img src="img/LookerStudio.png" alt="">
+                            <div class="overlay">
+                                <h3>Learning</h3>
+                                <p>Software</p>
+                                <a href="https://www.youtube.com/watch?v=x5pHETeEYeI" target="_blank"
+                                    class="btn btn-primary">Sport BI</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="proyecto">
+                            <img src="img/Statslive.png" alt="">
+                            <div class="overlay">
+                                <h3>Stats</h3>
+                                <p>Real Code</p>
+                                <a href="https://tvstats.rugby-stats.com/" target="_blank"
+                                    class="btn btn-primary">Html/CSS/JavasScrip</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="proyecto">
+                            <img src="img/Lineout.png" alt="">
+                            <div class="overlay">
+                                <h3>Stats</h3>
+                                <p>Axis</p>
+                                <a href="https://www.youtube.com/watch?v=EFM7rkmlsas" target="_blank"
+                                    class="btn btn-primary">Html/CSS/JavasScrip</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="proyecto">
+                            <img src="img/app.png" alt="">
+                            <div class="overlay">
+                                <h3>Software</h3>
+                                <p>Sport</p>
+                                <a href="https://lookerstudio.google.com/reporting/06ca3867-465b-43d7-8374-3b568023ee86"
+                                    target="_blank" class="btn btn-primary">Business Intelligence</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <img src="img/Super_Rugby_Americas.png" alt="">
-                    <div class="overlay">
-                        <h3>Data Science</h3>
-                        <p>Super Rugby Americas</p>
-                        <a href="https://srugby-americas.rugby-stats.com/" target="_blank" class="btn btn-primary">Open
-                            Dashboard</a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/puntoEncuentro.png" alt="">
-                    <div class="overlay">
-                        <h3>Rugby Coach</h3>
-                        <p>key</p>
-                        <a href="https://www.youtube.com/watch?v=4E2riwGDUVk" target="_blank"
-                            class="btn btn-primary">Coaching</a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/LookerStudio.png" alt="">
-                    <div class="overlay">
-                        <h3>Learning</h3>
-                        <p>Software</p>
-                        <a href="https://www.youtube.com/watch?v=x5pHETeEYeI" target="_blank"
-                            class="btn btn-primary">Sport BI</a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/Statslive.png" alt="">
-                    <div class="overlay">
-                        <h3>Stats</h3>
-                        <p>Real Code</p>
-                        <a href="https://tvstats.rugby-stats.com/" target="_blank"
-                            class="btn btn-primary">Html/CSS/JavasScrip</a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/Lineout.png" alt="">
-                    <div class="overlay">
-                        <h3>Stats</h3>
-                        <p>Axis</p>
-                        <a href="https://www.youtube.com/watch?v=EFM7rkmlsas" target="_blank"
-                            class="btn btn-primary">Html/CSS/JavasScrip</a>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/app.png" alt="">
-                    <div class="overlay">
-                        <h3>Software</h3>
-                        <p>Sport</p>
-                        <a href="https://lookerstudio.google.com/reporting/06ca3867-465b-43d7-8374-3b568023ee86"
-                            target="_blank" class="btn btn-primary">Business Intelligence</a>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -558,6 +575,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 

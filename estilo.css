@@ -501,7 +501,6 @@ html{
     justify-content: space-around;
 }
 .portfolio .galeria .proyecto{
-    display: none;
     position: relative;
     max-width: 340px;
     height: fit-content;
@@ -543,17 +542,30 @@ html{
 .portfolio .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
-.carousel-buttons {
-    text-align: center;
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.prev-btn, .next-btn {
-    background-color: #1CB698;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin: 0 10px;
-    border-radius: 5px;
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 340px;
+    height: fit-content;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #1CB698;
+}
+
+.portfolio .galeria::-webkit-scrollbar {
+    display: none;
+}
+.portfolio .galeria {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 /* SECCION CONTACTO */
 .contacto{
@@ -750,4 +762,11 @@ footer .arriba{
         text-decoration: none;
       }
     
+}
+.portfolio .galeria::-webkit-scrollbar {
+    display: none;
+}
+.portfolio .galeria {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
