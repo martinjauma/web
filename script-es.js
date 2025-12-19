@@ -53,3 +53,40 @@ const langButton = document.getElementById("lang-button");
 const aboutMeSection = document.getElementById("about-me");
 
 
+const galeria = document.querySelector(".galeria");
+const proyectos = document.querySelectorAll(".proyecto");
+const btnPrev = document.querySelector(".prev-btn");
+const btnNext = document.querySelector(".next-btn");
+
+let slideIndex = 0;
+
+function showSlides() {
+    if (slideIndex >= proyectos.length) {
+        slideIndex = 0;
+    }
+    if (slideIndex < 0) {
+        slideIndex = proyectos.length - 1;
+    }
+
+    proyectos.forEach((proyecto, i) => {
+        if (i === slideIndex) {
+            proyecto.style.display = "block";
+        } else {
+            proyecto.style.display = "none";
+        }
+    });
+}
+
+btnNext.addEventListener("click", () => {
+    slideIndex++;
+    showSlides();
+});
+
+btnPrev.addEventListener("click", () => {
+    slideIndex--;
+    showSlides();
+});
+
+showSlides();
+
+
