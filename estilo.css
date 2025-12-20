@@ -204,7 +204,6 @@ html{
     z-index: 10;
     text-decoration: none;
     
-
 }
 .sobremi button .overlay{
     position: absolute;
@@ -731,16 +730,6 @@ footer .arriba{
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
     .contacto .fila{
         display: block;
     }
