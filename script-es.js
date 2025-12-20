@@ -74,12 +74,3 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-const swiperContainer = document.querySelector('.swiper-container');
-
-swiperContainer.addEventListener('wheel', (event) => {
-    if (event.deltaX !== 0) {
-        event.preventDefault();
-    }
-});
-
-
