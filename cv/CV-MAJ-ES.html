@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Martin Jauma — CV</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    color: #2c2c2c;
+    background: #fff;
+    line-height: 1.55;
+}
+
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    page-break-after: always;
+    overflow: hidden;
+}
+
+/* ── HEADER ─────────────────────────────── */
+.header {
+    background: #111827;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.header-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #10b981;
+    flex-shrink: 0;
+}
+
+.header-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.header-name h1 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+}
+
+.header-name h1 strong { font-weight: 800; }
+
+.header-name .role {
+    font-size: 9px;
+    color: #10b981;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.header-contact {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.header-contact span {
+    font-size: 9.5px;
+    color: #9ca3af;
+}
+
+/* ── BODY ────────────────────────────────── */
+.body { display: flex; flex: 1; }
+
+/* ── SIDEBAR ─────────────────────────────── */
+.sidebar {
+    width: 62mm;
+    background: #f3f4f6;
+    padding: 18px 15px;
+    flex-shrink: 0;
+    border-right: 1px solid #e5e7eb;
+}
+
+.s-title {
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #10b981;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #10b981;
+}
+
+.s-title:first-child { margin-top: 0; }
+
+.bio {
+    font-size: 10px;
+    color: #4b5563;
+    line-height: 1.65;
+}
+
+.skill { margin-bottom: 7px; }
+
+.skill-name {
+    font-size: 9.5px;
+    color: #374151;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.skill-bar {
+    height: 3.5px;
+    background: #d1d5db;
+    border-radius: 99px;
+}
+
+.skill-fill {
+    height: 100%;
+    background: #10b981;
+    border-radius: 99px;
+}
+
+.tool-list { list-style: none; }
+
+.tool-list li {
+    font-size: 9.5px;
+    color: #4b5563;
+    padding: 4px 0;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tool-list li::before {
+    content: '▸';
+    color: #10b981;
+    font-size: 8px;
+    flex-shrink: 0;
+}
+
+.passport-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #ecfdf5;
+    border: 1px solid #10b981;
+    border-radius: 5px;
+    padding: 5px 8px;
+    margin-top: 8px;
+    font-size: 9.5px;
+    font-weight: 600;
+    color: #065f46;
+}
+
+/* ── MAIN ────────────────────────────────── */
+.main { flex: 1; padding: 18px 20px; }
+
+.section-title {
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #111827;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #10b981;
+}
+
+.section-title:first-child { margin-top: 0; }
+
+.exp {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.exp:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.exp-left {
+    width: 20mm;
+    flex-shrink: 0;
+    padding-top: 1px;
+}
+
+.exp-date {
+    font-size: 9px;
+    color: #10b981;
+    font-weight: 700;
+    text-align: right;
+    line-height: 1.45;
+}
+
+.exp-right {
+    flex: 1;
+    padding-left: 12px;
+    border-left: 2px solid #e5e7eb;
+    position: relative;
+}
+
+.exp-right::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #10b981;
+}
+
+.exp-role {
+    font-size: 11px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1px;
+}
+
+.exp-company {
+    font-size: 10px;
+    color: #10b981;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.exp-desc {
+    font-size: 9.5px;
+    color: #6b7280;
+    line-height: 1.55;
+}
+
+.exp-bullets {
+    margin-top: 5px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.exp-bullets li {
+    font-size: 9.5px;
+    color: #6b7280;
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.exp-bullets li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-top: 6px;
+}
+
+.tag {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+    font-size: 8.5px;
+    font-weight: 500;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.footer {
+    background: #111827;
+    padding: 6px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer span { font-size: 8.5px; color: #6b7280; }
+
+@page { size: A4; margin: 0; }
+@media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+</style>
+</head>
+<body>
+
+<!-- ════════ PÁGINA 1 ════════ -->
+<div class="page">
+    <div class="header">
+        <div class="header-photo">
+            <img src="../img/MAJperfilCoach.jpeg" alt="Martin Jauma">
+        </div>
+        <div class="header-name">
+            <h1><strong>MARTIN</strong> JAUMA</h1>
+            <div class="role">Entrenador de Rugby &nbsp;·&nbsp; Analista de Rendimiento &nbsp;·&nbsp; Data Science</div>
+        </div>
+        <div class="header-contact">
+            <span>martin.jauma@gmail.com</span>
+            <span>+54 9 11 3620-5030</span>
+            <span>Buenos Aires, Argentina</span>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="sidebar">
+            <div class="s-title">Perfil</div>
+            <p class="bio">Como entrenador de rugby, mi estilo de coaching es el del tipo facilitador y es el que me dio el mejor resultado. Soy organizado, metódico, resolutivo, open minded y apasionado por el juego. Uso la tecnología como herramienta en el desarrollo para un rugby competitivo.</p>
+
+            <div class="s-title">Habilidades Técnicas</div>
+            <div class="skill"><div class="skill-name">Sport Code / Hudl</div><div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div></div>
+            <div class="skill"><div class="skill-name">Angles</div><div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div></div>
+            <div class="skill"><div class="skill-name">Business Intelligence</div><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+            <div class="skill"><div class="skill-name">Codificación en Vivo</div><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+            <div class="skill"><div class="skill-name">Sport Code Scripts</div><div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div></div>
+            <div class="skill"><div class="skill-name">Vuelo de Drone</div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+            <div class="skill"><div class="skill-name">Apple Platform (Keynote)</div><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div></div>
+
+            <div class="s-title">Habilidades Blandas</div>
+            <ul class="tool-list">
+                <li>Liderazgo de Equipos</li>
+                <li>Planificación Organizacional</li>
+                <li>Gestión de Proyectos</li>
+                <li>Comunicación</li>
+                <li>Creatividad e Innovación</li>
+                <li>Detección de Talentos</li>
+            </ul>
+
+            <div class="s-title">Idiomas &amp; Documentación</div>
+            <ul class="tool-list">
+                <li>Español — Nativo</li>
+                <li>Inglés — Intermedio</li>
+            </ul>
+            <div class="passport-badge">🇪🇺 Pasaporte Europeo</div>
+        </div>
+
+        <div class="main">
+            <div class="section-title">Roles Actuales</div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2026 — Presente</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Data Scientist</div>
+                    <div class="exp-company">Fulcrum Technologies</div>
+                    <div class="exp-desc">Proyecto de detección de imágenes desarrollado por Fulcrum Technologies para Cricket Australia 🇦🇺. El proyecto abarca las selecciones nacionales femenina, masculina y juveniles, con foco en el reconocimiento automático de imágenes para el análisis de rendimiento y el desarrollo de jugadores.</div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2024 — Presente</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Data Scientist &amp; Analista de Rendimiento</div>
+                    <div class="exp-company">ARUSA Rugby — Santiago de Chile 🇨🇱</div>
+                    <div class="exp-desc">Proyecto completo de analítica para los torneos T10 y Segunda División. Desarrollo de aplicaciones web en React, diseño y gestión de base de datos, y visualización de datos para todos los equipos de la competencia.</div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2025</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Head Coach</div>
+                    <div class="exp-company">Jockey Club de Venado Tuerto SF 🇦🇷</div>
+                    <div class="exp-desc">Head Coach del 1er equipo en el Torneo Regional del Litoral (TRL).</div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2024</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Asesor Técnico &amp; Entrenador</div>
+                    <div class="exp-company">Paysandú Golf Club Trébol 🇺🇾</div>
+                    <div class="exp-desc">Planificación de los entrenamientos, definición de objetivos, visión y misión del plantel para la categoría mayores. Trabajo conjunto con entrenadores y profesionales de cada área.</div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2024</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Analista de Video &amp; Datos</div>
+                    <div class="exp-company">Selección Uruguay Rugby 🇺🇾</div>
+                    <div class="exp-desc">Miembro del staff del seleccionado uruguayo de rugby. Desarrollo de páginas web, reportes de datos y análisis de video para todo el equipo de profesionales.</div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2020 — 2023</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Capacitador HP &amp; Desarrollo de Analistas</div>
+                    <div class="exp-company">Sudamérica Rugby — Staff de Alto Rendimiento</div>
+                    <div class="exp-desc">Parte del Staff de AR de Sudamérica Rugby (Gerente: Daniel Hourcade). Co-creación de la primera academia regional de AR en Sudamérica para capacitar y desarrollar futuros analistas del juego.</div>
+                    <div class="tags">
+                        <span class="tag">JJOO Santiago 2023</span>
+                        <span class="tag">Super Rugby Americas 2023</span>
+                        <span class="tag">Academia HP Santa Fe 2023</span>
+                        <span class="tag">Academia HP Córdoba 2022</span>
+                        <span class="tag">SLAR Mar–May 2022</span>
+                        <span class="tag">Academia HP MdP 2021</span>
+                        <span class="tag">Clasificatorio World Rugby 2023</span>
+                        <span class="tag">SLAR Mar–May 2021</span>
+                        <span class="tag">Test Match URU vs ESP 2020</span>
+                        <span class="tag">SA4N Oct 2020</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2020 — 2025</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Project Manager — Data Science</div>
+                    <div class="exp-company">Super Rugby Americas / SLAR</div>
+                    <div class="exp-desc">Liderazgo de proyectos de análisis de datos para la competencia de Franquicias Americanas. Toma de requerimientos de entrenadores, preparadores físicos, médicos y referís; diseño de soluciones de visualización de datos a medida; provisión de servicios HIA, TMO y CITING para el campeonato Super Rugby Americas.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>martin.jauma@gmail.com &nbsp;·&nbsp; +54 9 11 3620-5030</span>
+        <span>1 / 2</span>
+    </div>
+</div>
+
+
+<!-- ════════ PÁGINA 2 ════════ -->
+<div class="page">
+    <div class="header">
+        <div class="header-photo">
+            <img src="../img/MAJperfilBI.jpg" alt="Martin Jauma">
+        </div>
+        <div class="header-name">
+            <h1><strong>MARTIN</strong> JAUMA</h1>
+            <div class="role">Entrenador de Rugby &nbsp;·&nbsp; Analista de Rendimiento &nbsp;·&nbsp; Data Science</div>
+        </div>
+        <div class="header-contact">
+            <span>martin.jauma@gmail.com</span>
+            <span>+54 9 11 3620-5030</span>
+            <span>Buenos Aires, Argentina</span>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="sidebar">
+            <div class="s-title">Logros Destacados</div>
+            <ul class="tool-list">
+                <li>Doble ascenso — Club San Carlos 2016</li>
+                <li>Puesto 18 — U.R.B.A. todos los equipos</li>
+                <li>Gira New Zealand 2018 (40 personas)</li>
+                <li>1ª Academia AR de Sudamérica</li>
+                <li>Staff Selección Uruguay Rugby</li>
+                <li>JJOO Santiago 2023</li>
+            </ul>
+
+            <div class="s-title">Competencias</div>
+            <ul class="tool-list">
+                <li>Super Rugby Americas</li>
+                <li>Campeonato SLAR</li>
+                <li>U.R.B.A. (Unión de Buenos Aires)</li>
+                <li>TRL — Torneo Regional del Litoral</li>
+                <li>Torneo SA4N</li>
+                <li>Clasificatorio World Rugby</li>
+            </ul>
+
+            <div class="s-title">Contacto</div>
+            <ul class="tool-list">
+                <li>martin.jauma@gmail.com</li>
+                <li>+54 9 11 3620-5030</li>
+                <li>Buenos Aires, Argentina</li>
+            </ul>
+            <div class="passport-badge">🇪🇺 Pasaporte Europeo</div>
+        </div>
+
+        <div class="main">
+            <div class="section-title">Experiencia como Entrenador</div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2022</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Asesor Técnico</div>
+                    <div class="exp-company">Rugby Club Los Matreros</div>
+                    <div class="exp-desc">Capacitación de entrenadores del club en el proceso de desarrollo para las categorías juveniles M15–M19. Diagnóstico, planificación y análisis de partidos semanales para desarrollar objetivos medibles a corto, mediano y largo plazo.</div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2017–2019</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Asesor Técnico</div>
+                    <div class="exp-company">Club Pucara</div>
+                    <div class="exp-desc">Capacitación de entrenadores en el "qué, para qué y cómo" entrenar. Pucará es uno de los clubes más importantes del país. En 2019 también brindé asesoramiento técnico y soporte de análisis de video para los 3 primeros equipos senior (TOP 12).</div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2016–2019<br>&amp; 2023</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Head Coach</div>
+                    <div class="exp-company">Club San Carlos</div>
+                    <div class="exp-desc">Creación de una identidad y estilo de juego propio junto a entrenadores y jugadores. Desarrollo de todas las estructuras para un rugby competitivo.</div>
+                    <ul class="exp-bullets">
+                        <li>Doble ascenso a la 2da categoría en 2016</li>
+                        <li>Mejor campaña de la historia del club — puesto 18 en U.R.B.A.</li>
+                        <li>Crecimiento de 3 a 5 equipos</li>
+                        <li>Gira a Nueva Zelanda 2018 (delegación de 40 personas)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-title">Otra Experiencia</div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">Ene–Jun<br>2018</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Analista de Video — Fútbol</div>
+                    <div class="exp-company">Club Atlético Atlanta</div>
+                    <div class="exp-desc">Capacitación del staff en la herramienta Angles y soporte de codificación en vivo durante entrenamientos y partidos. (Primera B Metropolitana — 3ra división nacional)</div>
+                </div>
+            </div>
+
+            <div class="section-title">Experiencia Internacional</div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2024</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Analista de Video &amp; Datos</div>
+                    <div class="exp-company">Selección Uruguay Rugby 🇺🇾</div>
+                    <div class="exp-desc">Miembro del staff del seleccionado uruguayo de rugby.</div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2023</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Miembro del Staff</div>
+                    <div class="exp-company">Sudamérica XV</div>
+                    <div class="exp-desc">Seleccionado para el equipo de los mejores jugadores sudamericanos para la Gira de Black Lion (Georgia) por Sudamérica.</div>
+                </div>
+            </div>
+
+            <div class="exp">
+                <div class="exp-left"><div class="exp-date">2010–2013</div></div>
+                <div class="exp-right">
+                    <div class="exp-role">Entrenador &amp; Seleccionador de Forwards</div>
+                    <div class="exp-company">Unión de Rugby de Buenos Aires — U.R.B.A.</div>
+                    <div class="exp-desc">Convocado para colaborar en dos giras nacionales como Entrenador de Forwards del Grupo I Senior (Salta y Rosario). También dirigí un programa de detección de talentos U16 (2010–2012) para desarrollar futuros seleccionados para el Argentino de Provincias a los 18/19 años.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>martin.jauma@gmail.com &nbsp;·&nbsp; +54 9 11 3620-5030</span>
+        <span>2 / 2</span>
+    </div>
+</div>
+
+</body>
+</html>
